@@ -87,10 +87,15 @@ header .img-container {
   position: relative;
   width: fit-content;
   background-image: url(./../imgs/assassins.jpg);
-  width: 350px;
+  width: 320px;
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 400px) {
+  header .img-container {
+    width: 270px;
+  }
 }
 .menu-item{
   width: 30px;
@@ -154,7 +159,11 @@ nav span:last-child{
   width: 50px;
   height: 50px;
 }
-
+@media screen and (max-width: 340px) {
+  .img-container .discount-container {
+    left: -5px;
+  }
+}
 .search-box {
   width: fit-content;
 }
@@ -350,6 +359,18 @@ header .card {
 .floating-img {
   height: 400px;
   width: 300px;
+}
+@media screen and (max-width: 340px) {
+  .floating-cards .floating-card {
+    padding: 20px !important;
+    width: 260px;
+  }
+  .floating-cards .floating-card.card1 {
+    top: -2%;
+  }
+  .floating-img {
+    width: 260px;
+  }
 }
 @media screen and (max-width: 575px) {
   .floating-cards {
