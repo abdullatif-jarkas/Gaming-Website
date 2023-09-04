@@ -268,15 +268,18 @@ header .card {
 }
 @media screen and (max-width: 300px) {
   .cards-container:hover .h-card-1{
-    top: 144px;
-    right: 64px;
+    top: 134px;
+    right: 63px;
+    z-index: 1;
   }
   .cards-container:hover .h-card-2{
-    top: 144px;
+    top: 134px;
     right: -64px;
   }
   .cards-container:hover .h-card-3{
-    top: 265px;
+    top: 255px;
+    right: 0;
+    z-index: 2;
   }
 }
 /* End Header Cards */
