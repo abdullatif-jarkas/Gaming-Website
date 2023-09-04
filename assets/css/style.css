@@ -44,7 +44,7 @@ body {
 }
 /* End Global */
 header {
-  min-height: 100vh;
+  min-height: 600px;
   background-image: url(./../imgs/background.jpg);
   background-size: cover;
   border-radius: 0 0 100px 100px;
@@ -197,7 +197,7 @@ header .card {
   background-color: #028dff;
 }
 .trending .btn:hover{
-  color: black !important;
+  background-color: rgba(232, 97, 104, 0.9);
 }
 .btn:focus {
   border: 0 !important;
@@ -399,15 +399,18 @@ header .card {
   }
 }
 @media screen and (min-width: 768px) {
+  .floating-cards {
+    width: 700px;
+  }
   .floating-card.card1 {
     position: absolute;
-    left: 10%;
+    left: 0%;
     z-index: 999;
   }
   .floating-img{
     position: absolute;
-    top: 50px;
-    left: 350px;
+    top: 100px;
+    left: 250px;
   }
   .floating-card.card2 {
     position: absolute;
@@ -415,6 +418,13 @@ header .card {
     left: 440px;
     z-index: 999;
   }
+}
+.floating-cards .card1 button {
+  background-color: #e86167;
+  color: white;
+}
+.floating-cards .card1 button:hover {
+  background-color: rgba(232, 97, 104, 0.9);
 }
 .floating-cards .card1, .floating-cards .card2 {
   background-color: #efeeec;
@@ -426,54 +436,6 @@ header .card {
 .floating-cards .search-box input {
   width: 70%;
 }
-/* .floating-cards .card{
-  max-width: 400px;
-  min-height: 200px;
-  background: #efeeec;
-  border: 1px solid #efeeec;
-}
-.floating-cards .img-card {
-  position: relative;
-  max-width: 400px;
-  height: 400px;
-  bottom: 20px;
-  overflow: hidden;
-}
-.floating-cards .img-card img {
-  width: 100%;
-}
-.floating-cards .card1 {
-  left:60px;
-  bottom: -50px;
-  max-width: 400px;
-}
-.floating-cards .card2 {
-  min-height: 150px;
-  right: 60px;
-  bottom: -50px;
-}
-@media screen and (max-width: 576px) {
-  .floating-cards .card1 {
-    left:0px;
-    bottom: -5px;
-  }
-  .floating-cards .card2 {
-    right: 0px;
-    bottom: 140px;
-  }
-}
-.floating-cards button {
-  background-color: #e86167;
-}
-.floating-cards span {
-  color: #028dff;
-}
-.floating-cards .btn {
-  color: white;
-}
-.floating-cards .btn:hover {
-  color: #000;
-} */
 /* End Floating Cards */
 /* Start Footer */
 footer {
