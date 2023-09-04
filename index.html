@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>GameX</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- Fontawesome -->
@@ -17,15 +17,22 @@
 </head>
 <body>
   <header class="pt-1">
-    <nav class="py-2">
+    <nav class="py-3">
       <div class="nav-container d-flex justify-content-between px-5 position-relative align-items-center">
-        <a href="#" class="logo">GameX</a>
+        <a href="#" class="logo"><i class="fa-solid fa-headset pe-2 fs-4"></i>GameX</a>
+        <div class="cart position-relative">
+          <i class="fa-solid fa-cart-shopping text-white fs-3"></i>
+          <span class="badge price rounded-pill position-absolute d-flex justify-content-center align-items-center"></span>
+        </div>
         <div class="menu-item d-md-none">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
         <ul class="list d-md-block d-md-flex mb-0">
+          <li class="px-md-3">
+            <a class="text-md-white active anchor0" href="#">Home</a>
+          </li>
           <li class="px-md-3">
             <a class="text-md-white anchor1" href="#trending">Trending Games</a>
           </li>
@@ -45,37 +52,13 @@
             <p>WELCOME TO <span style="font-family: Pacifico;">GameX</span></p>
             <h1 class="mb-3">BEST GAMING SITE EVER!</h1>
             <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur quas rerum nobis quisquam porro voluptatum unde cum excepturi beatae enim, a alias inventore pariatur dolor aut atque nemo nihil!</p>
-            <div class="searchBox">
-              <input class="searchInput" type="text" name="" placeholder="Search For Games">
-              <button class="searchButton" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                  <g clip-path="url(#clip0_2_17)">
-                    <g filter="url(#filter0_d_2_17)">
-                      <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
-                    </g>
-                  </g>
-                  <defs>
-                    <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                      <feOffset dy="4"></feOffset>
-                      <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                      <feComposite in2="hardAlpha" operator="out"></feComposite>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-                    </filter>
-                    <clipPath id="clip0_2_17">
-                      <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
+            <div class="search-box d-flex bg-white rounded-5">
+              <input type="text" name="" id="" placeholder="Search Now" class="ps-3">
+              <button class="rounded-5">Search Now</button>
             </div>
           </div>
           <div class="col-12 col-sm-5 py-5 py-md-0 d-flex justify-content-center justify-content-md-end">
             <div class="img-container rounded">
-              <!-- <img src="./assets/imgs/assassins.jpg" class="rounded" alt=""> -->
               <span class="badge price rounded-pill">$22</span>
               <div class="discount-container rounded-circle d-flex justify-content-center align-items-center bg-red">
                 <span class="badge discount rounded-pill">-40%</span>
@@ -88,70 +71,28 @@
     <div class="cards-container d-flex justify-content-center align-items-center">
       <div class="header-card text-center shadow h-card-1">
         <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center mx-auto">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <i class="fa-solid fa-cloud-arrow-down fs-3"></i>
         </div>
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Free Download</h5>
       </div>
       <div class="header-card text-center shadow h-card-2">
         <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center mx-auto">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <i class="fa-regular fa-user fs-3"></i>
         </div>
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">User Account</h5>
       </div>
       <div class="header-card text-center shadow h-card-3">
         <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center mx-auto">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <i class="fa-solid fa-play fs-3"></i>
         </div>
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Replay Ready</h5>
       </div>
       <div class="header-card text-center shadow h-card-4">
         <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center mx-auto">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <i class="fa-solid fa-pager fs-3"></i>
         </div>
-        <h5 class="card-title">Special title treatment</h5>
+        <h5 class="card-title">Easy Layout</h5>
       </div>
-      <!-- <div class="row justify-content-center">
-        <div class="col-6 col-md-3">
-          <div class="card shadow mb-3 mx-auto">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-              <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-              </div>
-              <h5 class="card-title">Special title treatment</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 d-none d-sm-block">
-          <div class="card shadow mb-3 mx-auto">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-              <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-              </div>
-              <h5 class="card-title">Special title treatment</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 d-none d-md-block">
-          <div class="card shadow mb-3 mx-auto">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-              <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-              </div>
-              <h5 class="card-title">Special title treatment</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 d-none d-md-block">
-          <div class="card shadow mb-3 mx-auto">
-            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-              <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-              </div>
-              <h5 class="card-title">Special title treatment</h5>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </header>
   <!-- End Header -->
@@ -169,73 +110,65 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
-            <div class="trend-card mx-auto">
-              <img src="./assets/imgs/lol.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
+          <div class="col-12 col-sm-6 col-lg-3 gy-3 mb-3 mb-md-0">
+            <div class="trend-card mx-auto rounded">
+              <img src="./assets/imgs/lol.jpeg" class="card-img-top rounded" alt="...">
+              <div class="card-body d-flex">
                 <div class="row w-100 m-0 px-2">
-                  <div class="col-8 p-0">
+                  <div class="col-6 p-0 d-flex flex-column justify-content-around">
                     <p class="text-secondary m-0">Game</p>
                     <p class="card-text">Assassins Creed</p>
                   </div>
-                  <div class="col-4 p-0 d-flex justify-content-center align-items-center">
-                    <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
+                  <div class="col-6 p-0 d-flex justify-content-center align-items-center">
+                    <button class="btn bg-red p-2 rounded text-white shadow add-cart1">Add To Cart</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
-            <div class="trend-card mx-auto">
-              <img src="./assets/imgs/zelda.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+          <div class="col-12 col-sm-6 col-lg-3 gy-3 mb-3 mb-md-0">
+            <div class="trend-card mx-auto rounded">
+              <img src="./assets/imgs/zelda.jpg" class="card-img-top rounded" alt="...">
+              <div class="card-body d-flex">
                 <div class="row w-100 m-0 px-2">
-                  <div class="col-8 p-0">
+                  <div class="col-6 p-0 d-flex flex-column justify-content-around">
                     <p class="text-secondary m-0">Game</p>
                     <p class="card-text">Assassins Creed</p>
                   </div>
-                  <div class="col-4 p-0 d-flex justify-content-center align-items-center">
-                    <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
+                  <div class="col-6 p-0 d-flex 6ustify-content-center align-items-center">
+                    <button class="btn bg-red p-2 rounded text-white shadow add-cart2">Add To Cart</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
-            <div class="trend-card mx-auto">
-              <img src="./assets/imgs/god-of-war-ragnarok.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+          <div class="col-12 col-sm-6 col-lg-3 gy-3 mb-3 mb-md-0">
+            <div class="trend-card mx-auto rounded">
+              <img src="./assets/imgs/god-of-war-ragnarok.jpg" class="card-img-top rounded" alt="...">
+              <div class="card-body d-flex">
                 <div class="row w-100 m-0 px-2">
-                  <div class="col-8 p-0">
+                  <div class="col-6 p-0 d-flex flex-column justify-content-around">
                     <p class="text-secondary m-0">Game</p>
                     <p class="card-text">Assassins Creed</p>
                   </div>
-                  <div class="col-4 p-0  d-flex justify-content-center align-items-center">
-                    <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
+                  <div class="col-6 p-0  d-flex justify-content-center align-items-center">
+                    <button class="btn bg-red p-2 rounded text-white shadow add-cart3">Add To Cart</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
-            <div class="trend-card mx-auto">
-              <img src="./assets/imgs/nfs.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+          <div class="col-12 col-sm-6 col-lg-3 gy-3 mb-3 mb-md-0">
+            <div class="trend-card mx-auto rounded">
+              <img src="./assets/imgs/nfs.jpg" class="card-img-top rounded" alt="...">
+              <div class="card-body d-flex">
                 <div class="row w-100 m-0 px-2">
-                  <div class="col-8 p-0">
+                  <div class="col-6 p-0 d-flex flex-column justify-content-around">
                     <p class="text-secondary m-0">Game</p>
                     <p class="card-text">Assassins Creed</p>
                   </div>
-                  <div class="col-4 p-0 d-flex justify-content-center align-items-center">
-                    <div class="icon-container rounded-circle text-white d-flex justify-content-center align-items-center">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
+                  <div class="col-6 p-0 d-flex justify-content-center align-items-center">
+                    <button class="btn bg-red p-2 rounded text-white shadow add-cart4">Add To Cart</button>
                   </div>
                 </div>
               </div>
@@ -349,51 +282,51 @@
             <p class="m-0 red-color">Trending</p>
             <h2 class="mb-5">Top Categories</h2>
         </div>
-        <div class="row justify-content-center gy-3 gy-lg-0">
-          <div class="col-auto">
+        <div class="row justify-content-center gy-3">
+          <div class="col-sm-6 col-md-4 col-lg">
             <div class="card">
               <div class="card-text mx-auto p-2">
-                <p class="card-text text-white">Some quick</p>
+                <p class="card-text text-white">Action</p>
               </div>
               <div class="img-container">
                 <img src="./assets/imgs/lol.jpeg" class="card-img" alt="...">
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-sm-6 col-md-4 col-lg">
             <div class="card">
               <div class="card-text mx-auto p-2">
-                <p class="card-text text-white">Some quick</p>
+                <p class="card-text text-white">Adventure</p>
               </div>
               <div class="img-container">
                 <img src="./assets/imgs/lol.jpeg" class="card-img" alt="...">
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-sm-6 col-md-4 col-lg">
             <div class="card">
               <div class="card-text mx-auto p-2">
-                <p class="card-text text-white">Some quick</p>
+                <p class="card-text text-white">Arcade</p>
               </div>
               <div class="img-container">
                 <img src="./assets/imgs/lol.jpeg" class="card-img" alt="...">
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-sm-6 col-md-4 col-lg">
             <div class="card">
               <div class="card-text mx-auto p-2">
-                <p class="card-text text-white">Some quick</p>
+                <p class="card-text text-white">Board</p>
               </div>
               <div class="img-container">
                 <img src="./assets/imgs/lol.jpeg" class="card-img" alt="...">
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-sm-6 col-md-4 col-lg">
             <div class="card">
               <div class="card-text mx-auto p-2">
-                <p class="card-text text-white">Some quick</p>
+                <p class="card-text text-white">Casual</p>
               </div>
               <div class="img-container">
                 <img src="./assets/imgs/lol.jpeg" class="card-img" alt="...">
@@ -403,24 +336,23 @@
         </div>
       </div>
     </section>
-    <section class="floating-cards my-5 py-5">
-      <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
-        <div class="card card1 p-5 z-1 rounded">
-          <p class="red-color">OUR SHOP</p>
-          <h3>Go Pre-Order Buy & Get Best <span>Prices</span> For You!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus.</p>
-          <button class="btn rounded-pill">SHOP NOW</button>
-        </div>
-        <div class="img-card z-0">
-          <img src="./assets/imgs/Ghost.png" class="rounded" alt="">
-        </div>
-        <div class="card card2 p-5 z-1 rounded">
-          <p class="red-color">NEWSLETTER</p>
-          <h3>Get Up To $100 Off</h3>
-          <h3>Just Buy <span>Subscribe</span></h3>
-          <h3>Newsletter!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus.</p>
-          <button class="btn rounded-pill">SHOP NOW</button>
+    <section class="floating-cards mt-5 py-5 container-fluid position-relative">
+      <div class="floating-card card1 p-5 rounded">
+        <p class="red-color">OUR SHOP</p>
+        <h3>Go Pre-Order Buy & Get Best <span>Prices</span> For You!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus.</p>
+        <button class="btn rounded-pill">SHOP NOW</button>
+      </div>
+      <div class="floating-img">
+        <img src="./assets/imgs/Ghost.png" class="rounded w-100" alt="">
+      </div>
+      <div class="floating-card card2 p-4 rounded">
+        <p class="red-color">NEWSLETTER</p>
+        <h3>Get Up To $100 Off Just Buy <span>Subscribe</span> Newsletter!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus.</p>
+        <div class="search-box d-flex bg-white rounded-5">
+          <input type="text" name="" id="" placeholder="Search Now" class="ps-3">
+          <button class="rounded-5">Search Now</button>
         </div>
       </div>
     </section>
@@ -429,7 +361,7 @@
     <div class="container-fluid px-5">
       <div class="row">
         <p class="text-center mt-3 mb-1 text-white">Copyright &copy; 2023 GameX Gaming Company</p>
-        <p class="text-center mb-5 text-white">All rights reserved</p>
+        <p class="text-center mb-5 text-white">All rights reserved to <a href="https://www.linkedin.com/in/abdullatif-jarkas/" class="text-white" target="_blank">Abdullatif Jarkas</a></p>
       </div>
     </div>
   </footer>
