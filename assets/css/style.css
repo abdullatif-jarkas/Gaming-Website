@@ -436,6 +436,9 @@ header .card {
 .floating-cards .search-box input {
   width: 70%;
 }
+.floating-cards span {
+  color: #028dff;
+}
 /* End Floating Cards */
 /* Start Footer */
 footer {
