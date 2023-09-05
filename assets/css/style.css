@@ -377,7 +377,7 @@ header .card {
 }
 @media screen and (max-width: 575px) {
   .floating-cards {
-    min-height: 900px;
+    min-height: 800px;
   }
   .floating-card.card1 {
     position: absolute;
@@ -402,7 +402,7 @@ header .card {
 }
 @media screen and (min-width: 576px) {
   .floating-cards {
-    min-height: 900px;
+    min-height: 800px;
   }
   .floating-card.card1 {
     position: absolute;
