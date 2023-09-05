@@ -246,7 +246,7 @@ header .card {
   }
   .header-card {
     width: 150px;
-    height: 125px;
+    height: 150px;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
@@ -255,29 +255,29 @@ header .card {
     position: absolute;
   }
   .cards-container:hover .h-card-1{
-    top: 150px;
+    top: 160px;
     right: 90px;
   }
   .cards-container:hover .h-card-2{
-    top: 150px;
+    top: 160px;
     right: -90px;
   }
   .cards-container:hover .h-card-3{
-    top: 300px;
+    top: 320px;
   }
 }
 @media screen and (max-width: 300px) {
   .cards-container:hover .h-card-1{
-    top: 134px;
+    top: 154px;
     right: 63px;
     z-index: 1;
   }
   .cards-container:hover .h-card-2{
-    top: 134px;
+    top: 154px;
     right: -64px;
   }
   .cards-container:hover .h-card-3{
-    top: 255px;
+    top: 305px;
     right: 0;
     z-index: 2;
   }
